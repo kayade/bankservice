@@ -1,0 +1,843 @@
+{
+	"info": {
+		"_postman_id": "18fd524f-551c-41be-8be3-80918db18c0a",
+		"name": "Bankservice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6235313"
+	},
+	"item": [
+		{
+			"name": "create customer",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer Lll8wEc2NPdZO4sBnM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"request\": \"CAC\",\r\n    \"gender\": \"ipNXAdmin\",\r\n    \"first_name\": \"Luke\",\r\n    \"middle_name\": \"Jide\",\r\n    \"surname\": \"Adaba\",\r\n    \"date_of_birth\": \"04 June 1998\",\r\n    \"nationality\": \"Nigeria\",\r\n    \"national_identity_number\": \"A9821B391B5\",\r\n    \"residential_address\": \"4, good street, elepe, ikorodu\",\r\n    \"residential_state\": \"lago\",\r\n    \"local_government\": \"Ibadan\",\r\n    \"state_of_origin\": \"Oyo\",\r\n    \"mobile_number\": \"07068722448\",\r\n    \"email\": \"jide@yahoo.com\",\r\n    \"marital_status\": \"Single\",\r\n    \"bvn\": \"6234567811987654\",\r\n    \"account_type\": \"savings\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:4844/comms",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4844",
+					"path": [
+						"comms"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create account",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer Lll8wEc2NPdZO4sBnM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"request\": \"CAC\",\r\n    \"gender\": \"ipNXAdmin\",\r\n    \"first_name\": \"Luke\",\r\n    \"middle_name\": \"Jide\",\r\n    \"surname\": \"Adaba\",\r\n    \"date_of_birth\": \"04 June 1998\",\r\n    \"nationality\": \"Nigeria\",\r\n    \"national_identity_number\": \"A9821B391B5\",\r\n    \"residential_address\": \"4, good street, elepe, ikorodu\",\r\n    \"residential_state\": \"lago\",\r\n    \"local_government\": \"Ibadan\",\r\n    \"state_of_origin\": \"Oyo\",\r\n    \"mobile_number\": \"07068722448\",\r\n    \"email\": \"jide@yahoo.com\",\r\n    \"marital_status\": \"Single\",\r\n    \"bvn\": \"6234567811987654\",\r\n    \"account_type\": \"savings\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:4844/comms",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "4844",
+							"path": [
+								"comms"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 11 Dec 2023 12:27:11 GMT"
+						},
+						{
+							"key": "Content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-length",
+							"value": "140"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"account_number\": \"0696975545\",\n    \"account_type\": \"savings\",\n    \"surname\": \"Adaba\",\n    \"bvn\": \"6234567811987654\",\n    \"middle_name\": \"Jide\",\n    \"first_name\": \"Luke\"\n}"
+				}
+			]
+		},
+		{
+			"name": "view all customers",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer Lll8wEc2NPdZO4sBnM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"request\": \"RAA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:4844/comms",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4844",
+					"path": [
+						"comms"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "view all account",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer Lll8wEc2NPdZO4sBnM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"request\": \"RAA\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:4844/comms",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "4844",
+							"path": [
+								"comms"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 11 Dec 2023 12:08:47 GMT"
+						},
+						{
+							"key": "Content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-length",
+							"value": "525"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"customer_id\": \"1\",\n        \"create_at\": \"2023-12-11T12:30:30.153\",\n        \"modified_at\": \"2023-12-11T12:30:30.153\",\n        \"gender\": \"ipNXAdmin\",\n        \"first_name\": \"Femi\",\n        \"middle_name\": \"Emmanuela\",\n        \"surname\": \"Jedge\",\n        \"date_of_birth\": \"04 April 2023\",\n        \"nationality\": \"Nigeria\",\n        \"national_identity_number\": \"A2321391B5\",\n        \"residential_address\": \"4, good street, elepe, ikorodu\",\n        \"residential_state\": \"lago\",\n        \"local_government\": \"oyin\",\n        \"state_of_origin\": \"kwara\",\n        \"mobile_number\": \"07068722448\",\n        \"email\": \"oluwakayo@gmail.com\",\n        \"marital_status\": \"Single\",\n        \"bvn\": \"1234567890987654\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "view customer info",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer Lll8wEc2NPdZO4sBnM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"request\": \"RAI\",\r\n    \"customer_id\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:4844/comms",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4844",
+					"path": [
+						"comms"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "view customer info",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer Lll8wEc2NPdZO4sBnM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"request\": \"RAI\",\r\n    \"customer_id\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:4844/comms",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "4844",
+							"path": [
+								"comms"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 11 Dec 2023 12:08:09 GMT"
+						},
+						{
+							"key": "Content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-length",
+							"value": "507"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"create_at\": \"2023-12-11T12:30:30.153\",\n        \"modified_at\": \"2023-12-11T12:30:30.153\",\n        \"gender\": \"ipNXAdmin\",\n        \"first_name\": \"Femi\",\n        \"middle_name\": \"Emmanuela\",\n        \"surname\": \"Jedge\",\n        \"date_of_birth\": \"04 April 2023\",\n        \"nationality\": \"Nigeria\",\n        \"national_identity_number\": \"A2321391B5\",\n        \"residential_address\": \"4, good street, elepe, ikorodu\",\n        \"residential_state\": \"lago\",\n        \"local_government\": \"oyin\",\n        \"state_of_origin\": \"kwara\",\n        \"mobile_number\": \"07068722448\",\n        \"email\": \"oluwakayo@gmail.com\",\n        \"marital_status\": \"Single\",\n        \"bvn\": \"1234567890987654\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "view customer accounts",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer Lll8wEc2NPdZO4sBnM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"request\": \"RCA\",\r\n    \"customer_id\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:4844/comms",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4844",
+					"path": [
+						"comms"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "view customer info",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer Lll8wEc2NPdZO4sBnM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"request\": \"RAI\",\r\n    \"customer_id\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:4844/comms",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "4844",
+							"path": [
+								"comms"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 11 Dec 2023 12:08:09 GMT"
+						},
+						{
+							"key": "Content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-length",
+							"value": "507"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"create_at\": \"2023-12-11T12:30:30.153\",\n        \"modified_at\": \"2023-12-11T12:30:30.153\",\n        \"gender\": \"ipNXAdmin\",\n        \"first_name\": \"Femi\",\n        \"middle_name\": \"Emmanuela\",\n        \"surname\": \"Jedge\",\n        \"date_of_birth\": \"04 April 2023\",\n        \"nationality\": \"Nigeria\",\n        \"national_identity_number\": \"A2321391B5\",\n        \"residential_address\": \"4, good street, elepe, ikorodu\",\n        \"residential_state\": \"lago\",\n        \"local_government\": \"oyin\",\n        \"state_of_origin\": \"kwara\",\n        \"mobile_number\": \"07068722448\",\n        \"email\": \"oluwakayo@gmail.com\",\n        \"marital_status\": \"Single\",\n        \"bvn\": \"1234567890987654\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "deposit to customer account",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer Lll8wEc2NPdZO4sBnM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"request\": \"DEP\",\r\n    \"account_number\": \"0696975545\",\r\n    \"amount\": \"1000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:4844/comms",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4844",
+					"path": [
+						"comms"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "deposit to customer account",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer Lll8wEc2NPdZO4sBnM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"request\": \"DEP\",\r\n    \"account_number\": \"0696975545\",\r\n    \"amount\": \"150\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:4844/comms",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "4844",
+							"path": [
+								"comms"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 11 Dec 2023 13:10:15 GMT"
+						},
+						{
+							"key": "Content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-length",
+							"value": "213"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"account_id\": \"2\",\n    \"create_at\": \"2023-12-11T13:27:10.291\",\n    \"modified_at\": \"2023-12-11T13:27:10.291\",\n    \"account_type\": \"savings\",\n    \"account_number\": \"0696975545\",\n    \"account_available_balance\": \"250.0\",\n    \"account_balance\": \"250.0\"\n}"
+				}
+			]
+		},
+		{
+			"name": "withdraw from customer account",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer Lll8wEc2NPdZO4sBnM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"request\": \"WTD\",\r\n    \"account_number\": \"0696975545\",\r\n    \"amount\": \"600\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:4844/comms",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4844",
+					"path": [
+						"comms"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "withdraw from customer account",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer Lll8wEc2NPdZO4sBnM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"request\": \"WTD\",\r\n    \"account_number\": \"0696975545\",\r\n    \"amount\": \"250\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:4844/comms",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "4844",
+							"path": [
+								"comms"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 11 Dec 2023 13:21:01 GMT"
+						},
+						{
+							"key": "Content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-length",
+							"value": "89"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"response_code\": \"X00\",\n    \"response_message\": \"Balance insufficient to make this withdrawal\"\n}"
+				},
+				{
+					"name": "withdraw from customer account",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer Lll8wEc2NPdZO4sBnM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"request\": \"WTD\",\r\n    \"account_number\": \"0696975545\",\r\n    \"amount\": \"50\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:4844/comms",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "4844",
+							"path": [
+								"comms"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 11 Dec 2023 13:28:16 GMT"
+						},
+						{
+							"key": "Content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-length",
+							"value": "211"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"account_id\": \"2\",\n    \"create_at\": \"2023-12-11T13:27:10.291\",\n    \"modified_at\": \"2023-12-11T13:27:10.291\",\n    \"account_type\": \"savings\",\n    \"account_number\": \"0696975545\",\n    \"account_available_balance\": \"80.0\",\n    \"account_balance\": \"80.0\"\n}"
+				}
+			]
+		},
+		{
+			"name": "transfer to customer account",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer Lll8wEc2NPdZO4sBnM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"request\": \"TRF\",\r\n    \"account_number\": \"0696975545\",\r\n    \"amount\": \"1000\",\r\n    \"recipient_account_number\": \"0696831841\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:4844/comms",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "4844",
+					"path": [
+						"comms"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "transfer to customer account",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer Lll8wEc2NPdZO4sBnM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"request\": \"TRF\",\r\n    \"account_number\": \"0696975545\",\r\n    \"amount\": \"1000\",\r\n    \"recipient_account_number\": \"0696831841\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:4844/comms",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "4844",
+							"path": [
+								"comms"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 11 Dec 2023 13:53:05 GMT"
+						},
+						{
+							"key": "Content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-length",
+							"value": "213"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"account_id\": \"2\",\n    \"create_at\": \"2023-12-11T13:27:10.291\",\n    \"modified_at\": \"2023-12-11T13:27:10.291\",\n    \"account_type\": \"savings\",\n    \"account_number\": \"0696975545\",\n    \"account_available_balance\": \"600.0\",\n    \"account_balance\": \"600.0\"\n}"
+				}
+			]
+		}
+	]
+}
