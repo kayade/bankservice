@@ -1,6 +1,6 @@
 Bankservice
 
-This is a microservice that manages and processes all email related operations.
+This is a microservice that simulates a banking environment. Allowing users to do basic operations like withdrawal and deposit.
 
 This microservice is built with Java
 
